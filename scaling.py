@@ -1,11 +1,14 @@
 import math
+
 try:
     import Metashape
 except:
     print("Cant find Metashape")
 
+
 def vectorLength(x, y, z):
-    return math.sqrt(x**2 + y**2 + z**2)
+    return math.sqrt(x ** 2 + y ** 2 + z ** 2)
+
 
 def scale():
     print("start script")
@@ -42,5 +45,9 @@ def scale():
 
 
 label = "Scripts/Scaling"
+try:
+    Metashape.app.removeMenuItem(label)
+except:
+    pass
 Metashape.app.addMenuItem(label, scale)
 print("To execute this script press {}".format(label))
