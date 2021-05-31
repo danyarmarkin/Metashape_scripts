@@ -43,7 +43,7 @@ def scale():
     print(v2)
     # v3 = v1 - v2
     # print(v3)
-    l = vectorLength(round(v1.x - v2.x, 5), round(v1.y - v2.y, 5), round(v1.z - v2.z, 5))
+    l = vectorLength(v1.x - v2.x, v1.y - v2.y, v1.z - v2.z)
     print(l)
     new_l = app.getFloat("Реальное расстояние между маркерами, m", l)
     now_scale = chunk.transform.scale
