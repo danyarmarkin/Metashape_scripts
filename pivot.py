@@ -26,11 +26,11 @@ def setPivot():
         z_sum += points[i].coord.z
     c = len(points) // 10
     vc = points[0].coord.copy()
-    vc.x = x_sum / c
-    vc.y = y_sum / c
-    vc.z = z_sum / c
-    print(vc)
-    chunk.transform.translation(vc)
+    x = x_sum / c
+    y = y_sum / c
+    z = z_sum / c
+    print(x, y, z)
+    chunk.transform.translation(Metashape.Vector((x, y, z)))
     print("finish script")
 
 label = "Scripts/Pivot"
