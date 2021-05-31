@@ -24,7 +24,7 @@ def scale():
             enable_markers.append(marker)
     if len(enable_markers) != 2:
         print("error")
-        app.MessageBox("Ошибка: Выделите 2 маркера.")
+        app.messageBox("Ошибка: Выделите 2 маркера.")
         return
     v1 = enable_markers[0].reference.location
     v2 = enable_markers[1].reference.location
@@ -33,7 +33,7 @@ def scale():
     new_l = app.getFloat("Реальное расстояние между маркерами", l)
     now_scale = chunk.transform.scale
     new_scale = now_scale * new_l / l
-    app.MessageBox("Размер фигуры успешно увеличен в {} раз(а)".format(new_scale / now_scale))
+    app.messageBox("Размер фигуры успешно увеличен в {} раз(а)".format(new_scale / now_scale))
 
 
 label = "Scripts/Scaling"
