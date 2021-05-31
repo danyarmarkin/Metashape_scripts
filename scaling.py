@@ -7,7 +7,8 @@ except:
 
 
 def vectorLength(x, y, z):
-    return math.sqrt(pow(x, 2) + pow(y, 2) + pow(z, 2))
+    print(pow(round(x, 5), 2) + pow(round(y, 5), 2) + pow(round(z, 5), 2))
+    return math.sqrt(pow(round(x, 5), 2) + pow(round(y, 5), 2) + pow(round(z, 5), 2))
 
 
 def scale():
