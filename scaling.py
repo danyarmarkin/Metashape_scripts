@@ -30,7 +30,7 @@ def scale():
     v2 = enable_markers[1].reference.location
     v3 = v1 - v2
     l = vectorLength(v3.x, v3.y, v3.z)
-    new_l = app.nextFloat("Реальное расстояние между маркерами", l)
+    new_l = app.getFloat("Реальное расстояние между маркерами", l)
     now_scale = chunk.transform.scale
     new_scale = now_scale * new_l / l
     app.MessageBox("Размер фигуры успешно увеличен в {} раз(а)".format(new_scale / now_scale))
