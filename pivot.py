@@ -25,11 +25,11 @@ def setPivot():
         y_sum += points[i].coord.y
         z_sum += points[i].coord.z
     c = len(points) // 10
-    x = -x_sum / c
-    y = -y_sum / c
-    z = -z_sum / c
+    x = x_sum / c
+    y = y_sum / c
+    z = z_sum / c
     print(x, y, z)
-    vc = Metashape.Vector(x, y, z)
+    vc = Metashape.Vector((x, y, z))
     print(vc)
     chunk.transform.translation(vc)
     print("finish script")
