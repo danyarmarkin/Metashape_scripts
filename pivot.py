@@ -16,7 +16,6 @@ def setPivot():
     point_cloud = chunk.point_cloud
     points = point_cloud.points
 
-    vc = Metashape.Vector
     x_sum = 0
     y_sum = 0
     z_sum = 0
@@ -25,9 +24,10 @@ def setPivot():
         y_sum += points[i].coord.y
         z_sum += points[i].coord.z
     c = len(points) // 10
-    vc.x = -x_sum / c
-    vc.y = -y_sum / c
-    vc.z = -z_sum / c
+    x = -x_sum / c
+    y = -y_sum / c
+    z = -z_sum / c
+    vc = Metashape.Vector(x, y, z)
 
     chunk.transform.translation(vc)
     print("finish script")
