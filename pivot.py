@@ -14,8 +14,9 @@ def setPivot():
     doc = app.document
     chunk = doc.chunk
     point_cloud = chunk.point_cloud
+    print("got point cloud")
     points = point_cloud.points
-
+    print("got points")
     x_sum = 0
     y_sum = 0
     z_sum = 0
@@ -27,6 +28,7 @@ def setPivot():
     x = -x_sum / c
     y = -y_sum / c
     z = -z_sum / c
+    print(x, y, z)
     vc = Metashape.Vector(x, y, z)
     print(vc)
     chunk.transform.translation(vc)
