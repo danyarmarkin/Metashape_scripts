@@ -10,12 +10,7 @@ def vectorLength(x, y, z):
     print(x)
     print(y)
     print(z)
-    print("")
-    print(x ** 2)
-    print(y ** 2)
-    print(z ** 2)
-    print(pow(round(x, 5), 2) + pow(round(y, 5), 2) + pow(round(z, 5), 2))
-    return math.sqrt(pow(round(x, 5), 2) + pow(round(y, 5), 2) + pow(round(z, 5), 2))
+    return math.sqrt(pow(x, 2) + pow(y, 2) + pow(z, 2))
 
 
 def scale():
@@ -41,9 +36,9 @@ def scale():
     v2 = enable_markers[1].reference.location
     print(v1)
     print(v2)
-    # v3 = v1 - v2
-    # print(v3)
-    l = vectorLength(v1.x - v2.x, v1.y - v2.y, v1.z - v2.z)
+    v3 = v1 - v2
+    print(v3)
+    l = vectorLength(v3.x, v3.y, v3.z)
     print(l)
     new_l = app.getFloat("Реальное расстояние между маркерами, m", l)
     now_scale = chunk.transform.scale
