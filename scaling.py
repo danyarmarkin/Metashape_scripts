@@ -33,6 +33,7 @@ def scale():
     new_l = app.getFloat("Реальное расстояние между маркерами", l)
     now_scale = chunk.transform.scale
     new_scale = now_scale * new_l / l
+    chunk.transform.scale = new_scale
     app.messageBox("Размер фигуры успешно увеличен в {} раз(а)".format(new_scale / now_scale))
 
 
