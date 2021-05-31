@@ -31,3 +31,6 @@ def scale():
     app.MessageBox("размер фигуры успешно увеличен в {} раз(а)".format(new_scale / now_scale))
 
 
+label = "Scripts/Scaling"
+Metashape.app.addMenuItem(label, scale)
+print("To execute this script press {}".format(label))
