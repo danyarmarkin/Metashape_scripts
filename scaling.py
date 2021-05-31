@@ -7,7 +7,7 @@ except:
 
 
 def vectorLength(x, y, z):
-    return math.sqrt(x ** 2 + y ** 2 + z ** 2)
+    return math.sqrt(pow(x, 2) + pow(y, 2) + pow(z, 2))
 
 
 def scale():
@@ -37,7 +37,7 @@ def scale():
     print(v3)
     l = vectorLength(v3.x, v3.y, v3.z)
     print(l)
-    new_l = app.getFloat("Реальное расстояние между маркерами", l)
+    new_l = app.getFloat("Реальное расстояние между маркерами, m", l)
     now_scale = chunk.transform.scale
     new_scale = now_scale * new_l / l
     chunk.transform.scale = new_scale
