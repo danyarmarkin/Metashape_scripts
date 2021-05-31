@@ -36,7 +36,7 @@ def scale():
     v2 = enable_markers[1].reference.location
     print(v1)
     print(v2)
-    v3 = v1 - v2
+    v3 = v2 - v1
     print(v3)
     l = vectorLength(v3.x, v3.y, round(v3.z, 5))
     print(l)
