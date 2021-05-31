@@ -20,7 +20,7 @@ def scale():
 
     enable_markers = []
     for marker in markers:
-        if marker.enabled:
+        if marker.selected:
             enable_markers.append(marker)
     if len(enable_markers) != 2:
         print("error")
