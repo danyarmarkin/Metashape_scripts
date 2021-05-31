@@ -6,7 +6,7 @@ except:
     print("Cant find Metashape")
 
 
-
+label = "Scripts"
 label_scaling = "Scripts/Scaling"
 label_pivot = "Scripts/Pivot"
 try:
@@ -16,3 +16,4 @@ except:
     pass
 Metashape.app.addMenuItem(label_pivot, pivot.setPivot)
 Metashape.app.addMenuItem(label_scaling, scaling.scale)
+print("To execute this scripts press {}".format(label))
