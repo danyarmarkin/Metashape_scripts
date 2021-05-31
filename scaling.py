@@ -8,10 +8,15 @@ def vectorLength(x, y, z):
     return math.sqrt(x**2 + y**2 + z**2)
 
 def scale():
+    print("start script")
     app = Metashape.app
+    print("got app")
     doc = app.document
+    print("got document")
     chunk = doc.chunk
+    print("got chunk")
     markers = chunk.markers
+    print("got markers")
 
     enable_mrakers = 0
     for marker in markers:
