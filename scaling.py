@@ -56,5 +56,5 @@ def init():
         Metashape.app.removeMenuItem(label)
     except:
         pass
-    Metashape.app.addMenuItem(label, scale, "Ctrl + Alt + S")
+    Metashape.app.addMenuItem(label, scale, "Ctrl + M")
     print("To execute this script press {}".format(label))
