@@ -41,6 +41,10 @@ def scale():
     l = vectorLength(v3.x, v3.y, v3.z)
     print(l)
     new_l = app.getFloat("Реальное расстояние между маркерами, m", l)
+    if new_l <= 0:
+        print("error")
+        app.messageBox("Ошибка: Значение не должно быть меньше или равно 0.")
+        return
     now_scale = chunk.transform.scale
     new_scale = now_scale * new_l / l
     chunk.transform.scale = new_scale
