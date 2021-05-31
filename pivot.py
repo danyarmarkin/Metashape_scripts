@@ -35,10 +35,10 @@ def setPivot():
     chunk.transform.translation = Metashape.Vector([0, 0, 0])
     print("finish script")
 
-label = "Scripts/Pivot"
-try:
-    Metashape.app.removeMenuItem(label)
-except:
-    pass
-Metashape.app.addMenuItem(label, setPivot)
-print("To execute this script press {}".format(label))
+# label = "Scripts/Pivot"
+# try:
+#     Metashape.app.removeMenuItem(label)
+# except:
+#     pass
+# Metashape.app.addMenuItem(label, setPivot)
+# print("To execute this script press {}".format(label))

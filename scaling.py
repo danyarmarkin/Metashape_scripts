@@ -49,10 +49,10 @@ def scale():
     app.messageBox("Размер фигуры успешно увеличен в {} раз(а)".format(new_scale / now_scale))
 
 
-label = "Scripts/Scaling"
-try:
-    Metashape.app.removeMenuItem(label)
-except:
-    pass
-Metashape.app.addMenuItem(label, scale)
-print("To execute this script press {}".format(label))
+# label = "Scripts/Scaling"
+# try:
+#     Metashape.app.removeMenuItem(label)
+# except:
+#     pass
+# Metashape.app.addMenuItem(label, scale)
+# print("To execute this script press {}".format(label))

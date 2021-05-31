@@ -14,5 +14,5 @@ try:
     Metashape.app.removeMenuItem(label_pivot)
 except:
     pass
-Metashape.app.addMenuItem(label_scaling, scaling.scale)
 Metashape.app.addMenuItem(label_pivot, pivot.setPivot)
+Metashape.app.addMenuItem(label_scaling, scaling.scale)
