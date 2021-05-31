@@ -46,7 +46,7 @@ def scale():
     chunk.transform.scale = new_scale
     for marker in markers:
         marker.position *= new_l / l
-    app.messageBox("Размер фигуры успешно увеличен в {} раз(а)".format(new_scale / now_scale))
+    app.messageBox("Размер фигуры увеличен в {} раз(а)".format(new_scale / now_scale))
 
 
 # label = "Scripts/Scaling"
