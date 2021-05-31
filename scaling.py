@@ -48,11 +48,11 @@ def scale():
         marker.reference.location *= new_l / l
     app.messageBox("Размер фигуры увеличен в {} раз(а)".format(new_scale / now_scale))
 
-
-# label = "Scripts/Scaling"
-# try:
-#     Metashape.app.removeMenuItem(label)
-# except:
-#     pass
-# Metashape.app.addMenuItem(label, scale)
-# print("To execute this script press {}".format(label))
+def init():
+    label = "Scripts/Scaling"
+    try:
+        Metashape.app.removeMenuItem(label)
+    except:
+        pass
+    Metashape.app.addMenuItem(label, scale)
+    print("To execute this script press {}".format(label))
