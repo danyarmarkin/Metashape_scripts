@@ -28,7 +28,7 @@ def setPivot():
     y = -y_sum / c
     z = -z_sum / c
     vc = Metashape.Vector(x, y, z)
-
+    print(vc)
     chunk.transform.translation(vc)
     print("finish script")
 
