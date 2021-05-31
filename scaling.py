@@ -28,6 +28,8 @@ def scale():
         return
     v1 = enable_markers[0].reference.location
     v2 = enable_markers[1].reference.location
+    print(v1)
+    print(v2)
     v3 = v1 - v2
     l = vectorLength(v3.x, v3.y, v3.z)
     new_l = app.getFloat("Реальное расстояние между маркерами", l)
