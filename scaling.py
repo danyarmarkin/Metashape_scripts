@@ -7,6 +7,13 @@ except:
 
 
 def vectorLength(x, y, z):
+    print(x)
+    print(y)
+    print(z)
+    print("")
+    print(x ** 2)
+    print(y ** 2)
+    print(z ** 2)
     print(pow(round(x, 5), 2) + pow(round(y, 5), 2) + pow(round(z, 5), 2))
     return math.sqrt(pow(round(x, 5), 2) + pow(round(y, 5), 2) + pow(round(z, 5), 2))
 
