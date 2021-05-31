@@ -30,6 +30,7 @@ def setPivot():
     z = z_sum / c
     print(x, y, z)
     vc = Metashape.Vector([x, y, z])
+    vc.w = 1
     print(vc)
     chunk.transform.translation(vc)
     print("finish script")
