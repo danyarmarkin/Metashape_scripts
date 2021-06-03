@@ -21,6 +21,8 @@ def rotate():
     t2 = chunk.transform.translation
     t3 = t1 - t2
     chunk.transform.translation += t3
+    for marker in markers:
+        marker.reference.location *= m
 
 def init():
     label = "Scripts/Auto Rotate"
