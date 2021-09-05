@@ -27,7 +27,7 @@ def rotate():
     markers = chunk.markers
     print("got markers")
 
-    main_cross = []
+    main_cross = {}
     for key, val in consts_markers:
         if val in markers:
             main_cross[key] = val
