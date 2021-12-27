@@ -2,6 +2,7 @@ try:
     import Metashape
 except:
     print("Cant find Metashape")
+    exit(-1)
 
 consts_markers = {
     "NW": "target 45",
@@ -14,6 +15,7 @@ consts_markers = {
     "S": "target 44",
     "SE": "target 47",
 }
+
 
 def rotate():
     global consts_markers
@@ -34,6 +36,7 @@ def rotate():
 
     sn = main_cross["N"].reference.location - main_cross["S"].reference.location
     print(sn)
+
 
 def init():
     label = "Scripts/Auto Rotate"
